@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background-image: url('/img/bg-img3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.height-div {
+  min-height: calc(100vh - 4rem);
+}
+
+.height-login {
+  min-height: calc(100vh - 11rem);
+}
