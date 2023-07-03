@@ -1,34 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Lambda Manager
 
-## Getting Started
+![Main page](/repo_img/main.png)
 
-First, run the development server:
+![Main page](/repo_img/sso.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Lambda Manager is a project that look for sharing files between computers, using the web as the interface. 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+It especially handles the case of non-tech companies which makes use of industrial laboratories to run their business. Usually in this kind of companies, the lab PCs have no access to internet and sometimes you are also not allowed to plug-in an USB (or to only plug-in authorized USBs). 
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+So, engineers face the problem of not being able to share files between their computers and the lab computer, especially to transfer files from the lab pc to the engineer pc. Here it is where **Lambda Manger** comes in. 
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The project is compose of two systems:
 
-## Learn More
+- A web page mean to run on the lab computer. It's going to be in charge of uploading the files to the company server.
+- Another web page mean to run on the company server. This web page is going to be accessible from any pc and you will be able to download the files you shared.
 
-To learn more about Next.js, take a look at the following resources:
+In this repository, you are going to find the second web page mentionated above. In order to get the first web page, you can visit <a href="https://github.com/WolfVector/upload-manager">Upload Manager</a> 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Clone the repo
+- `$ npm install`
 
-## Deploy on Vercel
+### Microsoft SSO
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+If you do not know how to register an application in Azure Portal, then I recommend you to follow the next tutorial: <a href="https://microsoft.github.io/MicrosoftCloud/tutorials/docs/Authentication-App-With-NextJs-And-Microsoft-Graph/Configuring-Application-Azure-Active-Directory">https://microsoft.github.io/MicrosoftCloud/tutorials/docs/Authentication-App-With-NextJs-And-Microsoft-Graph/Configuring-Application-Azure-Active-Directory</a>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Navigation
+
+- **/**: main page
+- **/login**: login page
+
+## Running in development mode
+
+`$ npm run dev`
+
+Go to <a href="http://localhost:3001/">localhost:3001</a>. It runs by defult in port 3001, you can change this in the **package.json** file.
+
+## Running in production
+
+- `$ npm run build`
+- `$ npm run start`
+
+<a href="http://localhost:3001/">. Again, it runs by default in port 3001. Change the **packages.json** file if you desire to modify this behavior.

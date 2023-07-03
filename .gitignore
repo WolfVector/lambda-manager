@@ -19,6 +19,9 @@
 .DS_Store
 *.pem
 
+/test_files
+/video
+
 # debug
 npm-debug.log*
 yarn-debug.log*
