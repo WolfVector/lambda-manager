@@ -21,7 +21,7 @@ With Lambda Manager sharing files is easy. Just open the web page in the lab pc,
 - Clone the repo
 - `$ npm install`
 
-## Folder files
+## Upload folder
 
 The files are not exposed to the public, they are saved outside the website within the folder `/src/server/uploads/your_username`. If for some reason the folder `uploads` does not exists, create it.
 
