@@ -2,7 +2,9 @@
 
 ![Main page](/repo_img/main.png)
 
-![Main page](/repo_img/sso.png)
+![Upload page](/repo_img/upload.JPG)
+
+![Login page](/repo_img/sso.png)
 
 Lambda Manager is a project that aims at sharing of files between computers in an easy way.
 
