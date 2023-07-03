@@ -28,6 +28,12 @@ If you do not know how to register an application in Azure Portal, then I recomm
 
 You can use the `.env.example` file as a template for your environment variables.
 
+Check you have enough permissions to use Microsoft Graph: <a href="https://learn.microsoft.com/en-us/graph/api/user-get?view=graph-rest-1.0&tabs=http">https://learn.microsoft.com/en-us/graph/api/user-get?view=graph-rest-1.0&tabs=http</a>
+
+## CORS
+
+The project is split in two websites. If you have been around web development for a while, then you probably know what CORS is. To change the header origin, go to `/src/server/msgraph.js`
+
 ## Navigation
 
 - **/**: main page
