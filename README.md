@@ -26,6 +26,8 @@ In this repository, you are going to find the second web page mentionated above.
 
 If you do not know how to register an application in Azure Portal, then I recommend you to follow the next tutorial: <a href="https://microsoft.github.io/MicrosoftCloud/tutorials/docs/Authentication-App-With-NextJs-And-Microsoft-Graph/Configuring-Application-Azure-Active-Directory">https://microsoft.github.io/MicrosoftCloud/tutorials/docs/Authentication-App-With-NextJs-And-Microsoft-Graph/Configuring-Application-Azure-Active-Directory</a>
 
+You can use the `.env.example` file as a template for your environment variables.
+
 ## Navigation
 
 - **/**: main page
