@@ -23,7 +23,7 @@ With Lambda Manager sharing files is easy. Just open the web page in the lab pc,
 
 ## Upload folder
 
-The files are not exposed to the public, they are saved outside the website within the folder `/src/server/uploads/your_username`. If for some reason the folder `uploads` does not exists, create it.
+The files are not exposed to the public, they are saved outside the website within the folder `/src/server/uploads/username`. If for some reason the folder `uploads` does not exists, create it. The folder `username` is created automatically.
 
 ### Microsoft SSO
 
