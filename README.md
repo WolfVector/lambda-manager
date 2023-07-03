@@ -27,7 +27,7 @@ If you do not know how to register an application in Azure Portal, then I recomm
 
 You can use the `.env.example` file as a template for your environment variables.
 
-Check you have enough permissions to use Microsoft Graph: <a href="https://learn.microsoft.com/en-us/graph/api/user-get?view=graph-rest-1.0&tabs=http">https://learn.microsoft.com/en-us/graph/api/user-get?view=graph-rest-1.0&tabs=http</a>
+Check if you have enough permissions to use Microsoft Graph: <a href="https://learn.microsoft.com/en-us/graph/api/user-get?view=graph-rest-1.0&tabs=http">https://learn.microsoft.com/en-us/graph/api/user-get?view=graph-rest-1.0&tabs=http</a>
 
 ## Navigation
 
