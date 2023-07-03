@@ -21,6 +21,10 @@ With Lambda Manager sharing files is easy. Just open the web page in the lab pc,
 - Clone the repo
 - `$ npm install`
 
+## Folder files
+
+The files are not exposed to the public, they are saved outside the website within the folder `/src/server/uploads/your_username`. If for some reason the folder `uploads` does not exists, create it.
+
 ### Microsoft SSO
 
 If you do not know how to register an application in Azure Portal, then I recommend you to follow the next tutorial: <a href="https://microsoft.github.io/MicrosoftCloud/tutorials/docs/Authentication-App-With-NextJs-And-Microsoft-Graph/Configuring-Application-Azure-Active-Directory">https://microsoft.github.io/MicrosoftCloud/tutorials/docs/Authentication-App-With-NextJs-And-Microsoft-Graph/Configuring-Application-Azure-Active-Directory</a>
