@@ -42,4 +42,4 @@ Go to <a href="http://localhost:3001/">localhost:3001</a>. It runs by defult in 
 - `$ npm run build`
 - `$ npm run start`
 
-<a href="http://localhost:3001/">. Again, it runs by default in port 3001. Change the **packages.json** file if you desire to modify this behavior.
+<a href="http://localhost:3001/">localhost:3001</a>. Again, it runs by default in port 3001. Change the **packages.json** file if you desire to modify this behavior.
