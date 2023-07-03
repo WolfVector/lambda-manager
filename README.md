@@ -10,12 +10,9 @@ It especially handles the case of non-tech companies that make use of industrial
 
 So, engineers face the problem of not being able to share files between their computers and the lab computer, especially to transfer files from the lab pc to the engineer pc. Here it is where **Lambda Manger** comes in. 
 
-The project is compose of two systems:
+With Lambda Manager sharing files is easy. Just open the web page in the lab pc, upload your files and you will be ready to download them from anywhere.
 
-- A web page mean to run on the lab computer. It's going to be in charge of uploading the files to the company server.
-- Another web page mean to run on the company server. This web page is going to be accessible from any pc and you will be able to download the files you shared.
-
-In this repository, you are going to find the second web page mentionated above. In order to get the first web page, you can visit <a href="https://github.com/WolfVector/upload-manager">Upload Manager</a> 
+**Note**: the lab PCs need access to your company server.
 
 ## Install
 
@@ -30,24 +27,21 @@ You can use the `.env.example` file as a template for your environment variables
 
 Check you have enough permissions to use Microsoft Graph: <a href="https://learn.microsoft.com/en-us/graph/api/user-get?view=graph-rest-1.0&tabs=http">https://learn.microsoft.com/en-us/graph/api/user-get?view=graph-rest-1.0&tabs=http</a>
 
-## CORS
-
-The project is split in two websites. If you have been around web development for a while, then you probably know what CORS is. To change the header origin, go to `/src/server/msgraph.js`
-
 ## Navigation
 
-- **/**: main page
+- **/**: main page 
 - **/login**: login page
+- **/upload**: upload page 
 
 ## Running in development mode
 
 `$ npm run dev`
 
-Go to <a href="http://localhost:3001/">localhost:3001</a>. It runs by defult in port 3001, you can change this in the **package.json** file.
+Go to <a href="http://localhost:3000/">localhost:3000</a>. It runs by defult in port 3000.
 
 ## Running in production
 
 - `$ npm run build`
 - `$ npm run start`
 
-<a href="http://localhost:3001/">localhost:3001</a>. Again, it runs by default in port 3001. Change the **packages.json** file if you desire to modify this behavior.
+<a href="http://localhost:3000/">localhost:3000</a>. Again, it runs by default in port 3000.

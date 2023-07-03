@@ -1,0 +1,35 @@
+/* the background color of the filepond drop area */
+.filepond--panel-root {
+    @apply bg-slate-100;
+}
+
+/* the text color of the drop label*/
+/*.filepond--drop-label {
+    @apply text-white
+}*/
+
+/* the border radius of the drop area */
+.filepond--panel-root {
+    @apply rounded-sm
+}
+
+.filepond--credits {
+    display: none;
+}
+
+[data-filepond-item-state='processing-complete'] .filepond--item-panel {
+    @apply bg-emerald-500;
+}
+
+/* error state color */
+[data-filepond-item-state*='error'] .filepond--item-panel,
+[data-filepond-item-state*='invalid'] .filepond--item-panel {
+    @apply bg-red-500
+}
+
+/* bordered drop area */
+.filepond--panel-root {
+    /*background-color: transparent;*/
+    @apply border border-slate-400/30;
+    /*border: 1px solid #2c3340;*/
+}

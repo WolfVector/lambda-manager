@@ -1,4 +1,4 @@
-import { headers, rootPath } from '@/server/msgraph'
+import { rootPath } from '@/server/msgraph'
 import { NextResponse } from 'next/server'
 import fs from "fs/promises"
 import { existsSync } from 'fs'
@@ -13,7 +13,7 @@ export async function POST(request) {
   const fileObj = Object.fromEntries(data)
   const file = fileObj.files
 
-  if (!file) return NextResponse.json({ success: false }, { status: 400, headers })
+  if (!file) return NextResponse.json({ success: false }, { status: 400 })
 
   try {
     let filePath = path.join(
@@ -34,16 +34,16 @@ export async function POST(request) {
     )
     await fs.writeFile(filePath, buffer)
     
-    return NextResponse.json({ success: true }, { status: 200, headers })
+    return NextResponse.json({ success: true }, { status: 200 })
   } catch (error) {
     console.log(error)
-    return NextResponse.json({ success: false }, { status: 400, headers })
+    return NextResponse.json({ success: false }, { status: 400 })
   }
 }
 
-export async function OPTIONS(request) {
+/*export async function OPTIONS(request) {
   return NextResponse.json({ ok: true }, {
     status: 200,
     headers
   })
-}
+}*/
