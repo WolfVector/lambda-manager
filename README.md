@@ -6,7 +6,7 @@
 
 ![Login page](/repo_img/sso.png)
 
-Lambda Manager is a project that aims at sharing of files between computers in an easy way.
+Lambda Manager is a project that aims at the sharing of files between computers in an easy way.
 
 It especially handles the case of non-tech companies that make use of industrial laboratories to run their business. Usually in this kind of companies, the lab PCs have no access to internet and sometimes you are also not allowed to plug-in an USB (or to only plug-in authorized USBs). 
 
